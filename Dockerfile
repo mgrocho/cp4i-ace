@@ -5,6 +5,7 @@ RUN  chmod -R ugo+rwx /home/aceuser
 USER 1000
 RUN ace_compile_bars.sh
 
+COPY server.conf.yaml /home/aceuser/initial-config/serverconf/server.conf.yaml
 EXPOSE 7600 7800 8888
 
 USER root
