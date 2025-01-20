@@ -4,6 +4,9 @@ COPY bars_test /home/aceuser/bars
 RUN  chmod -R ugo+rwx /home/aceuser
 USER 1000
 RUN ace_compile_bars.sh
+
+EXPOSE 7600 7800 8888
+
 USER root
 RUN  chmod -R ugo+rwx /home/aceuser
 USER 1000
